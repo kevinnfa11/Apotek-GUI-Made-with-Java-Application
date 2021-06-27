@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApotekGUI.view.Tampilanawal">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1024.0" layoutX="-9.0" layoutY="-11.0">
+         <image>
+            <Image url="@iMed/home.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="18.0" layoutY="228.0" prefHeight="54.0" prefWidth="181.0">
+         <buttons>
+            <Hyperlink onAction="#HandleTambahDataObat" prefHeight="54.0" prefWidth="129.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="14.0" layoutY="319.0" prefHeight="54.0" prefWidth="238.0">
+         <buttons>
+            <Hyperlink onAction="#HandleStatistikaHyperLink" prefHeight="180.0" prefWidth="197.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="379.0" layoutY="157.0">
+         <buttons>
+            <Hyperlink onAction="#HandleKapsul" prefHeight="178.0" prefWidth="208.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="673.0" layoutY="164.0">
+         <buttons>
+            <Hyperlink onAction="#HandleSerbuk" prefHeight="168.0" prefWidth="208.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="382.0" layoutY="373.0" prefHeight="168.0" prefWidth="197.0">
+         <buttons>
+            <Hyperlink onAction="#HandleSirup" prefHeight="153.0" prefWidth="282.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="673.0" layoutY="373.0" prefHeight="168.0" prefWidth="197.0">
+         <buttons>
+            <Hyperlink onAction="#HandleTablet" prefHeight="153.0" prefWidth="282.0" />
+         </buttons>
+      </ButtonBar>
+    </children>
+</AnchorPane>

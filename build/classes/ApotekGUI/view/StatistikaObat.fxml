@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApotekGUI.view.StatistikaObatController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1024.0" layoutX="-14.0" layoutY="-10.0">
+         <image>
+            <Image url="@iMed/statistika.jpg" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="barChart" layoutX="249.0" layoutY="6.0" prefHeight="374.0" prefWidth="765.0" title="Rata - Rata Harga Obat" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="6.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ButtonBar layoutX="67.0" layoutY="150.0">
+         <buttons>
+            <Hyperlink onAction="#HandleObat" prefHeight="53.0" prefWidth="98.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="67.0" layoutY="228.0">
+         <buttons>
+            <Hyperlink onAction="#HandleTambah" prefHeight="60.0" prefWidth="125.0" />
+         </buttons>
+      </ButtonBar>
+      <PieChart fx:id="dbPieUsia" layoutX="585.0" layoutY="400.0" prefHeight="294.0" prefWidth="406.0" />
+      <Text fx:id="dbMeanHarga" layoutX="426.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="125.0000216960907" />
+      <Text fx:id="dbModusHarga" layoutX="426.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.99998211860657" />
+      <Text fx:id="dbNObat" layoutX="426.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.99998405203223" />
+      <Label layoutX="267.0" layoutY="468.0" text="Jumlah Obat saat ini :" />
+      <Label layoutX="267.0" layoutY="435.0" text="Modus Obat :" />
+      <Label layoutX="267.0" layoutY="400.0" text="Rata-rata obat :" />
+   </children>
+</AnchorPane>

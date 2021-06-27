@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ApotekGUI.Tablet.Tablet3Controller">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1024.0" layoutX="-3.0" layoutY="-3.0">
+         <image>
+            <Image url="@../view/iMed/tablet3.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="20.0" layoutY="163.0">
+         <buttons>
+            <Hyperlink onAction="#obatHyper" prefHeight="34.0" prefWidth="225.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="20.0" layoutY="239.0">
+         <buttons>
+            <Hyperlink onAction="#tambahdata" prefHeight="51.0" prefWidth="225.0" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="20.0" layoutY="332.0">
+         <buttons>
+            <Hyperlink onAction="#statistikadata" prefHeight="51.0" prefWidth="225.0" />
+         </buttons>
+      </ButtonBar>
+      <Button layoutX="337.0" layoutY="663.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="88.0" text="Back" />
+   </children>
+</AnchorPane>
